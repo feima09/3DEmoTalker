@@ -18,4 +18,14 @@
 
 🌐 WebUI配置面板
 
-## 环境要求
+##  组件启动顺序
+
+语音识别服务 (FunASR)
+
+TTS服务 (MeloTTS)
+
+对话引擎 (LLM)
+
+嘴型驱动服务 (Audio2Face)
+
+UE5主程序
