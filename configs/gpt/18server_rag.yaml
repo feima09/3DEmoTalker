@@ -1,0 +1,19 @@
+type: openai
+api_endpoint: http://10.10.0.3:7861/knowledge_base/local_kb/tour/chat/completions
+request_header: {
+  "Content-Type": "application/json; charset=UTF-8"
+}
+request_body: {
+  "model": "qwen2.5-7b-instruct",
+  "stream": true,
+  "max_tokens": 32767,
+  "temperature": 0.7,
+  "messages": []
+}
+RAG:
+  enable: false
+  embedding:
+    api_endpoint: http://127.0.0.1:8000/v1
+    model: bge-m3
+    api_key: empty
+  top_k: 3

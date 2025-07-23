@@ -1,0 +1,11 @@
+type: gptsovits
+api_endpoint: http://127.0.0.1:8001/stream
+request_header: {
+  "Content-Type": "application/json"
+}
+request_body: {
+  "language": "default",
+  "speaker": "ZH_MIX_EN-default.wav",
+  "text": "",
+  "speed": 1.0
+}

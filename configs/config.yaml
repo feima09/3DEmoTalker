@@ -1,0 +1,53 @@
+log_level: INFO
+host: 127.0.0.1
+port: 5002
+GPT:
+  pre_config: null
+  type: openai
+  api_endpoint: http://172.23.1.7:9997/v1/chat/completions
+  request_header:
+    Content-Type: application/json; charset=UTF-8
+  request_body:
+    model: Qwen3-8B
+    stream: true
+    chat_template_kwargs:
+      enable_thinking: false
+    max_tokens: 40960
+    temperature: 0.7
+    top_p: 0.8
+    top_k: 20
+    min_p: 0
+    messages: []
+  RAG:
+    enable: true
+    embedding:
+      api_endpoint: http://172.23.1.7:9997/v1
+      model: bge-m3
+      api_key: empty
+    top_k: 3
+TTS:
+  pre_config: null
+  type: gptsovits
+  api_endpoint: http://172.23.1.7:8001/stream
+  request_header:
+    Content-Type: application/json
+  request_body:
+    language: default
+    speaker: ZH_MIX_EN-default.wav
+    text: ''
+    speed: 1.0
+ASR:
+  enable: true
+  mode: realtime
+  wake_words: 光小明,你好,在吗
+  timeout: 1
+  FunASR:
+    ip: 127.0.0.1
+    port: 10096
+    ssl: 0
+    mode: 2pass
+Player:
+  mode: local
+  Audio2Face:
+    url: 127.0.0.1:50051
+    player: /World/audio2face/audio_player_streaming

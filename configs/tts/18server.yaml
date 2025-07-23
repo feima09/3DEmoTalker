@@ -1,0 +1,16 @@
+type: gptsovits
+api_endpoint: http://10.10.0.3:9880/tts
+request_header: {
+  "Content-Type": "application/json"
+}
+request_body: {
+  "ref_audio_path": "Voice/boy_refer.wav",
+  "prompt_text": "我叫小黑，我也是妖精。",
+  "prompt_lang": "zh",
+  "text": "",
+  "text_lang": "zh",
+  "batch_size": 8,
+  "split_bucket": false,
+  "parallel_infer": true,
+  "streaming_mode": false
+}

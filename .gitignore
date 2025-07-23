@@ -1,0 +1,7 @@
+__pycache__/
+/.venv/
+/.vscode/
+/tmp/
+/logs/
+/python/*
+/test*

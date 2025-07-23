@@ -1,0 +1,23 @@
+type: qwen
+api_endpoint: https://dashscope.aliyuncs.com/api/v1/apps/b716dc6b75f743d9b243ac4aada81aee/completions
+request_header: {
+    "Content-Type": "application/json; charset=UTF-8",
+    "Authorization": "Bearer sk-13f0dc3e01104c66b8f935e1a3c31182",
+    "X-DashScope-SSE": "enable"
+}
+request_body: {
+  "input": {
+    "messages": []
+  },
+  "parameters":  {
+    "incremental_output": true
+  },
+  "debug": {}
+}
+RAG:
+  enable: false
+  embedding:
+    api_endpoint: http://127.0.0.1:8000/v1
+    model: bge-m3
+    api_key: empty
+  top_k: 3
