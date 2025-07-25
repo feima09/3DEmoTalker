@@ -4,7 +4,10 @@
 
 3DEmoTalker 是一个基于[虚幻引擎5.3](https://www.unrealengine.com/zh-CN/unreal-engine-5)开发的智能数字人项目，集成了语音识别、语音合成、AI对话和3D面部动画驱动技术支持链接本地知识库，语句打断功能。项目包含完整的UE5工程文件、后端服务接口和算法模块，支持本地部署和云端API接入。（本项目完整部署在windows系统上）
 
-<img src="doc/demo.gif" width="50%">
+<div style="display: flex; justify-content: space-between;">
+  <img src="doc/demo.gif" width="40%">
+  <img src="doc/demo1.gif" width="40%">
+</div>
 
 ## 主要特性
 
